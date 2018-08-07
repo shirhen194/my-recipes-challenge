@@ -2,6 +2,7 @@ var RecipeApp = function () {
 
     var recipes = [
         // { 
+        //     id: 1,
         //     name: 'Best Chicken Soup!', 
         //     image: 'https://static01.nyt.com/images/2016/11/29/dining/recipelab-chick-noodle-still/recipelab-chick-noodle-still-master675.jpg',
         //     ingredients: [
@@ -15,7 +16,7 @@ var RecipeApp = function () {
     var $recipes = $('.recipes');
 
     //id's for recipes
-    var recId = 0;
+    var recId = 2;
 
     //id's for ingredients
     var ingId = 0;
@@ -38,7 +39,7 @@ var RecipeApp = function () {
         //add code
     };
 
-    var _getIngredients = function(recipe){
+    var _getIngredientsHTML = function(recipe){
         var recipesHTML = "";
 
         //add code
@@ -54,7 +55,7 @@ var RecipeApp = function () {
             var recipe = recipes[i];
 
             //return HTML for all ingredients
-            var ingredients = _getIngredients(); //add code
+            var ingredients = _getIngredientsHTML(); //add code
 
             $recipes.append(
                 '<div class="recipe col-md-6  offset-md-3 img-fluid shadow" data-id="' + recipe.id + '">' + 
